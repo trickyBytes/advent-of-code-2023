@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61150cf9-9b96-486b-9672-98499162e81e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "dart.analysis.tool.window.visible": "false"
+  }
+}]]></component>
+  <component name="RunManager" selected="Quarkus.advent-of-code-2023.integrationTest">
+    <configuration name="advent-of-code-2023.integrationTest" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="advent-of-code-2023.integrationTest" />
+      <QsGradleRunConfiguration>
+        <ExternalSystemSettings>
+          <option name="executionName" />
+          <option name="externalProjectPath" value="$PROJECT_DIR$" />
+          <option name="externalSystemIdString" value="GRADLE" />
+          <option name="scriptParameters" />
+          <option name="taskDescriptions">
+            <list />
+          </option>
+          <option name="taskNames">
+            <list />
+          </option>
+          <option name="vmOptions" />
+        </ExternalSystemSettings>
+        <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+        <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+        <DebugAllEnabled>false</DebugAllEnabled>
+        <RunAsTest>false</RunAsTest>
+      </QsGradleRunConfiguration>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="advent-of-code-2023.main" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="advent-of-code-2023.main" />
+      <QsGradleRunConfiguration>
+        <ExternalSystemSettings>
+          <option name="executionName" />
+          <option name="externalProjectPath" value="$PROJECT_DIR$" />
+          <option name="externalSystemIdString" value="GRADLE" />
+          <option name="scriptParameters" />
+          <option name="taskDescriptions">
+            <list />
+          </option>
+          <option name="taskNames">
+            <list />
+          </option>
+          <option name="vmOptions" />
+        </ExternalSystemSettings>
+        <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+        <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+        <DebugAllEnabled>false</DebugAllEnabled>
+        <RunAsTest>false</RunAsTest>
+      </QsGradleRunConfiguration>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="advent-of-code-2023.test" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="advent-of-code-2023.test" />
+      <QsGradleRunConfiguration>
+        <ExternalSystemSettings>
+          <option name="executionName" />
+          <option name="externalProjectPath" value="$PROJECT_DIR$" />
+          <option name="externalSystemIdString" value="GRADLE" />
+          <option name="scriptParameters" />
+          <option name="taskDescriptions">
+            <list />
+          </option>
+          <option name="taskNames">
+            <list />
+          </option>
+          <option name="vmOptions" />
+        </ExternalSystemSettings>
+        <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+        <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+        <DebugAllEnabled>false</DebugAllEnabled>
+        <RunAsTest>false</RunAsTest>
+      </QsGradleRunConfiguration>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
