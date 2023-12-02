@@ -2,6 +2,7 @@ package com.akoolla.adventofcode
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
+import java.io.File
 
 val calibrationDocContents = listOf(
     "1abc2",
@@ -32,5 +33,14 @@ class CalibrationDecoderTests {
     @Test
     fun canSumDigitsFromMultipleLines(){
         Assertions.assertEquals(142, calibrationDocContents.decodeAndSum())
+    }
+
+    @Test
+    fun canDecodeAndSumDay001File(){
+        val calibrationValue: Int = File("src/test/resources/day001Input.txt")
+                .useLines { it.toList() }
+                .decodeAndSum()
+
+        Assertions.assertEquals(56049, calibrationValue)
     }
 }
