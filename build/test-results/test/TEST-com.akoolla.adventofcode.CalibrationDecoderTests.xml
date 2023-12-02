@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.akoolla.adventofcode.CalibrationDecoderTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-02T18:44:25" hostname="OVO-RWJ5T2JMF3.local" time="0.024">
+  <properties/>
+  <testcase name="canGetDigitsFromLine()" classname="com.akoolla.adventofcode.CalibrationDecoderTests" time="0.023"/>
+  <testcase name="canSumDigitsFromMultipleLines()" classname="com.akoolla.adventofcode.CalibrationDecoderTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
