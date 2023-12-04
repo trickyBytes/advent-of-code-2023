@@ -1,11 +1,10 @@
 package com.akoolla.adventofcode
 
-import io.restassured.internal.common.assertion.Assertion
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import java.io.File
 
-val calibrationDocContents = listOf(
+val testCalibration = listOf(
     "two1nine",
     "eightwothree",
     "abcone2threexyz",
@@ -14,23 +13,6 @@ val calibrationDocContents = listOf(
     "zoneight234",
     "7pqrstsixteen",
 )
-
-fun String.findAndReplaceSpelledDigits() = this
-    .toList()
-    .map { it.toString() }
-    .reduce { acc, s ->
-        var line: String = acc + s
-        textToDigitDictionary
-            .keys
-            .firstOrNull {
-                //println(it)
-                line.contains(it)
-            }
-            ?.run {
-                line = line.replace(this.substring(0, this.length -1), textToDigitDictionary[this] ?: "x")
-            }
-        line
-    }
 
 val textToDigitDictionary = mapOf(
     Pair("one", "1"),
@@ -44,15 +26,27 @@ val textToDigitDictionary = mapOf(
     Pair("eight", "8"),
 )
 
+fun String.findAndReplaceSpelledDigits() = this
+    .toList()
+    .map { it.toString() }
+    .reduce { acc, s ->
+        var line: String = acc + s
+        textToDigitDictionary
+            .keys
+            .firstOrNull { line.contains(it) }
+            ?.run {
+                line = line.replace(this.substring(0, this.length - 1), textToDigitDictionary[this] ?: "x")
+            }
+        line
+    }
+
 fun List<String>.decodeAndSum(): Int = this
-//    .map { it.findAndReplaceSpelledDigits() }
     .sumOf { it.getDigitsFromLine() }
 
 fun String.getDigitsFromLine(): Int = this
     .findAndReplaceSpelledDigits()
     .filter { it.isDigit() }
-    .toList()
-    .run { "" + this.first() + this.last() }
+    .let { "" + it.first() + it.last() }
     .run { Integer.parseInt(this) }
 
 class CalibrationDecoderTests {
@@ -78,7 +72,7 @@ class CalibrationDecoderTests {
 
     @Test
     fun canSumDigitsFromMultipleLines() {
-        Assertions.assertEquals(281, calibrationDocContents.decodeAndSum())
+        Assertions.assertEquals(281, testCalibration.decodeAndSum())
     }
 
     @Test
